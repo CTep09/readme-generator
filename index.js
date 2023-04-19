@@ -32,9 +32,10 @@ const questions = [
     },
     // change from input to dropdown for selecting license
     {
-        type: 'input',
+        type: 'list',
         name: 'license',
-        message: 'Please select a license from the list'
+        message: 'Please select a license from the list',
+        choices: ['MIT', 'ISC', 'Apache', 'Eclipse', 'Mozilla']
     },
     {
         type: 'input',
