@@ -42,12 +42,12 @@ function generateMarkdown(data) {
    
    ## Table of Contents
    
-   - [**Description**](#-description)
-   - [**Demo Video**](#-demo-video)
-   - [**Installation**](#-installation)
-   - [**Usage**](#-usage)
-   - [**License**](#-license)
-   - [**Author**](#-author)
+   - [**Description**](#📑-description)
+   - [**Installation**](#💾-installation)
+   - [**Usage**](#💻-usage)
+   - [**Contribution**](#🤝-contribution)
+   - [**Test**](#🧪-test)
+   - [**Questions**](#❓-questions)
    
    ## 📑 Description 
    ${data.description}
@@ -65,19 +65,14 @@ function generateMarkdown(data) {
   ## 🧪 Test
   ${data.test}
 
-  ## ❓Questions
+  ## ❓ Questions 
   ${data.questions}
-
-
-   ## 😎 Author
    
-   🖐 If you have any question about us or our project, feel free to contact us!
+   🖐 If you have any question about me or the project, feel free to contact me!
    
-   - **Cassie Tepper**
-   
-     - [**Cassie's Portfolio**](https://zzangu0215.github.io/portfolio/) (to be updated)
-     - **Github**: [**zzangu0215**](https://github.com/ctep09)
-     - Email: **cassandray9@gmail.com**
+     - [**Portfolio**](https://ctep09.github.io/Cassie-Tepper-Portfolio/) 
+     - **Github**: (https://github.com/ctep09)
+     - Email: 
    
 
 
@@ -85,3 +80,4 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown;
+ 
