@@ -1,26 +1,64 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = [{
+const questions = [
+    {
     type: 'input',
     name: 'title',
-    message: 'What is the title of your project?'
-}
+    message: 'Enter the title of your project'
+},
+    {
+    type: 'input',
+    name: 'description',
+    message: 'Enter the description for your project'
+},
+//     {
+//     type: 'input',
+//     name: 'tableOfContents',
+//     message: 'Enter the table of contents information for your project'
+// },
+    {
+    type: 'input',
+    name: 'installation',
+    message: 'Enter the the installation instructions for your project'
+},
+    {
+    type: 'input',
+    name: 'usage',
+    message: 'Enter the usage information for your project'
+},
+// change from input to dropdown for selecting license
+{
+    type: 'input',
+    name: 'license',
+    message: 'Please select a license from the list'
+},
+    {
+    type: 'input',
+    name: 'contribution',
+    message: 'Enter the usage contribution guidelines for your project'
+},
+    {
+    type: 'input',
+    name: 'test',
+    message: 'Enter the usage test instructions for your project'
+},
+    {
+    type: 'input',
+    name: 'questions',
+    message: 'Enter the email address for additional questions'
+},
+
 ];
 
-inquirer.prompt(questions)
-.then((response) => {
-    console.log(response);
-    writeToFile('readMeTest.md', response)
-})
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    const outputString = `# ${data.title}`
- 
-    fs.writeFile(fileName, outputString, function(error) {
+    fs.writeFile(fileName, data, function(error) {
         if (error) {
             console.error("Error writing to file: ", error);
         } else {
@@ -30,7 +68,15 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+.then((response) => {
+    // console.log(response);
+    const markdownContent = generateMarkdown(response);
+    writeToFile('README4.md', markdownContent)
+})
+
+}
 
 // Function call to initialize app
 init();
