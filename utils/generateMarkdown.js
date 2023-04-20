@@ -65,7 +65,6 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## ❓ Questions 
-  ${data.questions}
    
    🖐 If you have any question about me or the project, feel free to contact me!
    
