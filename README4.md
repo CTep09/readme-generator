@@ -1,8 +1,8 @@
 
-   # d 
+   # s 
 
 
-   [![License](https://img.shields.io/badge/license-MIT-red)](https://opensource.org/license/MIT)
+   [![License](https://img.shields.io/badge/license-ISC-blue)](https://opensource.org/license/ISC)
    
    
    ## Table of Contents
@@ -15,29 +15,28 @@
    - [**Questions**](#❓-questions)
    
    ## 📑 Description 
-   d
+   s
    
    ## 💾 Installation
-   d
+   s
    
    
    ## 💻 Usage
-   d
+   s
    
   ## 🤝 Contribution
-  d
+  s
 
   ## 🧪 Test
-  d
+  s
 
   ## ❓ Questions 
-  d
+  undefined
    
    🖐 If you have any question about me or the project, feel free to contact me!
    
-     - [**Portfolio**](https://ctep09.github.io/Cassie-Tepper-Portfolio/) 
-     - **Github**: (https://github.com/ctep09)
-     - Email: 
+     - [Github](https://github.com/ctep09)
+
+     - [Email:](mailto:cassandray9@gmail.com)
+
    
-
-

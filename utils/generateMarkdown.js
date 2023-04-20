@@ -70,12 +70,10 @@ function generateMarkdown(data) {
    
    🖐 If you have any question about me or the project, feel free to contact me!
    
-     - [**Portfolio**](https://ctep09.github.io/Cassie-Tepper-Portfolio/) 
-     - **Github**: (https://github.com/ctep09)
-     - Email: 
+     - [**Github**:](https://github.com/${data.questionsGitHub})
+
+     - [**Email**](mailto:${data.questionsEmail})
    
-
-
 `;
 }
 
