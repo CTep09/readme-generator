@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) { 
   // https://img.shields.io/badge/license-mit-red
   if (license === "MIT") {
-    return `https://img.shields.io/badge/license-${license}-red`;
+    return `https://img.shields.io/badge/license-${license}-ff69b4`;
   } 
   else if (license === "ISC") {
     return `https://img.shields.io/badge/license-${license}-blue`
@@ -54,8 +54,7 @@ function generateMarkdown(data) {
    
    ## 💾 Installation
    ${data.installation}
-   
-   
+
    ## 💻 Usage
    ${data.usage}
    
@@ -70,9 +69,9 @@ function generateMarkdown(data) {
    
    🖐 If you have any question about me or the project, feel free to contact me!
    
-     - [**Github**:](https://github.com/${data.questionsGitHub})
+     - [**Github**](https://github.com/${data.questionsGitHub})
 
-     - [**Email**](mailto:${data.questionsEmail})
+     - [**Email**](mailto${data.questionsEmail})
    
 `;
 }
