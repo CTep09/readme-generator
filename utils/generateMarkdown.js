@@ -70,7 +70,7 @@ function generateMarkdown(data) {
    
      - [**Github**](https://github.com/${data.questionsGitHub})
 
-     - [**Email**](mailto${data.questionsEmail})
+     - [**Email**](mailto:${data.questionsEmail})
    
 `;
 }
