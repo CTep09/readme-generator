@@ -72,7 +72,7 @@ function init() {
         .then((response) => {
             // console.log(response);
             const markdownContent = generateMarkdown(response);
-            writeToFile('READMETEST.md', markdownContent)
+            writeToFile('READMETESTING.md', markdownContent)
         })
 
 }
