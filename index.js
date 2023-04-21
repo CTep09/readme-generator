@@ -15,11 +15,6 @@ const questions = [
         name: 'description',
         message: 'Enter the description for your project'
     },
-    //     {
-    //     type: 'input',
-    //     name: 'tableOfContents',
-    //     message: 'Enter the table of contents information for your project'
-    // },
     {
         type: 'input',
         name: 'installation',
@@ -30,7 +25,6 @@ const questions = [
         name: 'usage',
         message: 'Enter the usage information for your project'
     },
-    // change from input to dropdown for selecting license
     {
         type: 'list',
         name: 'license',
@@ -78,7 +72,7 @@ function init() {
         .then((response) => {
             // console.log(response);
             const markdownContent = generateMarkdown(response);
-            writeToFile('README4.md', markdownContent)
+            writeToFile('READMETEST.md', markdownContent)
         })
 
 }
