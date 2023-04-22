@@ -36,6 +36,9 @@ function generateMarkdown(data) {
   return `
    # ${data.title} 
 
+   [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev) 
+   [![My Skills](https://skillicons.dev/icons?i=css)](https://skillicons.dev) 
+   [![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev) 
 
    ${renderLicenseSection(data.license)}
    
@@ -66,11 +69,12 @@ function generateMarkdown(data) {
 
   ## ❓ Questions 
    
-   🖐 If you have any question about me or the project, feel free to contact me!
-   
-     - [**Github**](https://github.com/${data.questionsGitHub})
+   🖐 My name is Cassie! If you have any question about me or the project, feel free to contact me:
 
-     - [**Email**](mailto:${data.questionsEmail})
+   
+     - [**Github: CTep09**](https://github.com/${data.questionsGitHub})
+
+     - [**Email: CassandraY9@gmail.com**](mailto:${data.questionsEmail})
    
 `;
 }
